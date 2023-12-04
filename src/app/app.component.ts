@@ -2,13 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { UserComponent } from './components/user/user.component';
 import { users } from './db/users.json';
 import { User } from './interfaces/user.interface';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ReactiveFormsModule],
+  imports: [CommonModule, RouterOutlet, ReactiveFormsModule, UserComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
