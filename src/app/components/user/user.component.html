@@ -1,0 +1,23 @@
+@if (!usersFiltered.length) {
+
+<span class="message">NO USERS 🙃</span>
+}
+<div class="users">
+  @for (user of usersFiltered; track $index) {
+  <article class="card">
+    <img [src]="user.img" [alt]="user.name" />
+    <div class="card__content">
+      <div class="card__info">
+        <div class="card__description">
+          <h2 class="card__name">{{ user.username }}</h2>
+          <p [ngClass]="user.active ? 'conected' : 'disconected'"></p>
+        </div>
+        <span [ngClass]="user.role">{{ user.role }} </span>
+      </div>
+      <button class="card__btn" (click)="isActive(user)">
+        {{ user.active ? "Disable" : "Active" }}
+      </button>
+    </div>
+  </article>
+  }
+</div>
