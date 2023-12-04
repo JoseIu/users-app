@@ -1,100 +1,56 @@
 .title {
   text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1em;
 }
 .form {
-  background-color: red;
-  margin: 0 auto;
-}
-.users {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-  gap: 1.5em;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-
-  border-radius: 0.4em;
-  overflow: hidden;
-
   background-color: var(--zinc-900);
   color: var(--zinc-200);
-  &__content {
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.3em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 2.5em 1em;
+  border-radius: 0.4em;
+
+  display: grid;
+  justify-content: center;
+  gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "search search check select select";
+  @media screen and (max-width: 640px) {
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas:
+      "search search search"
+      "check select select";
   }
-  &__name {
-    font-size: 1rem;
+  &__search {
+    grid-area: search;
+    &-input {
+      width: 100%;
+      padding: 0.3em 0.5em;
+      border-radius: 0.3em;
+      border: 0.0625rem solid var(--zinc-200);
+    }
   }
-  &__info {
+
+  &__checkbox {
+    grid-area: check;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__description {
-    display: flex;
-    column-gap: 0.4em;
     align-items: center;
     justify-content: center;
+    column-gap: 0.3em;
+    &-input {
+      width: 1.2em;
+      height: 1.2em;
+    }
   }
-  &__btn {
+
+  &__select {
+    grid-area: select;
     width: 100%;
-    background-color: transparent;
-    border: 1px solid var(--zinc-200);
-    color: var(--zinc-200);
-    padding: 0.5em;
-    border-radius: 0.4em;
-    cursor: pointer;
-    text-transform: uppercase;
+    border: 0.0625rem solid var(--zinc-200);
+
+    border-radius: 0.3em;
   }
-  &__btn:hover {
-    background-color: var(--zinc-200);
-    color: #222;
-    border: 1px solid yellow;
-    transition: all ease 0.3s;
-  }
-}
-.teacher,
-.student,
-.other {
-  border-radius: 0.3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.3em;
-}
-.teacher {
-  background-color: rgba(255, 123, 0, 0.678);
-}
-.student {
-  background-color: rgba(66, 207, 250, 0.486);
-}
-.other {
-  background-color: gray;
-  color: var(--zinc-900);
-}
-.conected,
-.disconected {
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-}
-.conected {
-  background-color: rgb(47, 255, 116);
-}
-.disconected {
-  background-color: rgb(163, 0, 0);
-}
-.message {
-  // background-color: aqua;
-  width: 100%;
-  height: 100dvh;
-  font-size: 3em;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
 }

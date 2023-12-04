@@ -2,36 +2,34 @@
   <h1 class="title">List of users</h1>
 
   <div class="form" [formGroup]="form">
-    <input
-      type="checkbox"
-      name="active"
-      id="active"
-      formControlName="onlyActive"
-    />
-    <label for="active">Activos</label>
-  </div>
+    <div class="form__search">
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="search...."
+        class="form__search-input"
+      />
+    </div>
+    <div class="form__checkbox">
+      <input
+        type="checkbox"
+        name="active"
+        id="active"
+        formControlName="onlyActive"
+        class="form__checkbox-input"
+      />
+      <label for="active">Only Active</label>
+    </div>
 
-  @if (!useresFiltered.length) {
-
-  <span class="message">NO HAY USUARIOS</span>
-  }
-  <div class="users">
-    @for (user of useresFiltered; track $index) {
-    <article class="card">
-      <img [src]="user.img" [alt]="user.name" />
-      <div class="card__content">
-        <div class="card__info">
-          <div class="card__description">
-            <h2 class="card__name">{{ user.username }}</h2>
-            <p [ngClass]="user.active ? 'conected' : 'disconected'"></p>
-          </div>
-          <span [ngClass]="user.role">{{ user.role }} </span>
-        </div>
-        <button class="card__btn" (click)="isActive(user)">
-          {{ user.active ? "Desactive" : "Active" }}
-        </button>
-      </div>
-    </article>
-    }
+    <select name="select" id="select" class="form__select">
+      <option value="0">Default</option>
+      <option value="1">Name</option>
+      <option value="2">Role</option>
+    </select>
   </div>
+  <users-list-card
+    [usersFiltered]="useresFiltered"
+    (isActiveEmiter)="isActive($event)"
+  ></users-list-card>
 </main>
