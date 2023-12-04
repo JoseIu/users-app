@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Joselu",
+      "name": "Joselu",
+      "active": false,
+      "role": "student",
+      "img": "assets/images/user_6.png"
+    },
+    {
+      "id": 2,
+      "username": "Sara",
+      "name": "Sara",
+      "active": true,
+      "role": "teacher",
+      "img": "assets/images/user_3.png"
+    },
+    {
+      "id": 3,
+      "username": "Vincent",
+      "name": "Vincent",
+      "active": true,
+      "role": "other",
+      "img": "assets/images/user_1.png"
+    },
+    {
+      "id": 4,
+      "username": "Paula",
+      "name": "Paula",
+      "active": false,
+      "role": "teacher",
+      "img": "assets/images/user_5.png"
+    },
+    {
+      "id": 5,
+      "username": "Moy",
+      "name": "Moy",
+      "active": true,
+      "role": "student",
+      "img": "assets/images/user_10.png"
+    },
+    {
+      "id": 6,
+      "username": "Llurnus",
+      "name": "Llurnus",
+      "active": false,
+      "role": "other",
+      "img": "assets/images/user_7.png"
+    },
+    {
+      "id": 7,
+      "username": "Cristina",
+      "name": "Cristina",
+      "active": false,
+      "role": "teacher",
+      "img": "assets/images/user_8.png"
+    },
+    {
+      "id": 8,
+      "username": "Karen",
+      "name": "Karen",
+      "active": true,
+      "role": "student",
+      "img": "assets/images/user_9.png"
+    },
+    {
+      "id": 9,
+      "username": "Encedalo",
+      "name": "Encedalo",
+      "active": true,
+      "role": "other",
+      "img": "assets/images/user_11.png"
+    },
+    {
+      "id": 10,
+      "username": "Carlos",
+      "name": "Carlos",
+      "active": true,
+      "role": "other",
+      "img": "assets/images/user_4.png"
+    },
+
+    {
+      "id": 11,
+      "username": "Covid",
+      "name": "Covid",
+      "active": true,
+      "role": "student",
+      "img": "assets/images/user_2.png"
+    }
+  ]
+}
