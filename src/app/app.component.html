@@ -4,6 +4,7 @@
   <div class="form" [formGroup]="form">
     <div class="form__search">
       <input
+        formControlName="search"
         type="text"
         name="search"
         id="search"
@@ -22,14 +23,22 @@
       <label for="active">Only Active</label>
     </div>
 
-    <select name="select" id="select" class="form__select">
+    <select
+      formControlName="sortBy"
+      name="select"
+      id="select"
+      class="form__select"
+    >
       <option value="0">Default</option>
       <option value="1">Name</option>
       <option value="2">Role</option>
+      <option value="3">Active</option>
     </select>
   </div>
+
+  <!-- {{ useresFiltered | json }} -->
   <users-list-card
     [usersFiltered]="useresFiltered"
-    (isActiveEmiter)="isActive($event)"
+    (isActiveEmiter)="toggleUserActive($event)"
   ></users-list-card>
 </main>
