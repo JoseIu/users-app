@@ -36,11 +36,12 @@
   }
   &__btn {
     width: 100%;
-    background-color: transparent;
-    border: 1px solid var(--zinc-200);
-    color: var(--zinc-200);
     padding: 0.5em;
     border-radius: 0.4em;
+    border: 1px solid var(--zinc-200);
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--zinc-200);
     cursor: pointer;
     text-transform: uppercase;
   }
@@ -54,11 +55,12 @@
 .teacher,
 .student,
 .other {
+  padding: 0.3em;
   border-radius: 0.3em;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.3em;
 }
 .teacher {
   background-color: rgba(255, 123, 0, 0.678);
