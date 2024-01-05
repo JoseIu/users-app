@@ -2,7 +2,7 @@
 
 <span class="message">NO USERS 🙃</span>
 }
-<div class="users">
+<div class="users" *ngIf="usersFiltered">
   @for (user of usersFiltered; track $index) {
   <article class="card" [style.view-transition-name]="'user-' + user.id">
     <img class="card__img" [srcset]="user.img" [alt]="user.name" />
