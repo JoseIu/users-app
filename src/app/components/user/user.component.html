@@ -12,7 +12,7 @@
           <h2 class="card__name">{{ user.username }}</h2>
           <span [class]="user.active ? 'conected' : 'disconected'"></span>
         </div>
-        <span [class]="user.role">{{ user.role }} </span>
+        <span class="card__role">{{ user.role }} </span>
       </div>
       <button class="card__btn" (click)="isActive(user)">
         {{ user.active ? "Disable" : "Active" }}
