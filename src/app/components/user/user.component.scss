@@ -88,3 +88,9 @@
   justify-content: center;
   text-transform: uppercase;
 }
+img.card__img {
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+.card__content {
+  transition: opacity 0.3s ease-in-out;
+}

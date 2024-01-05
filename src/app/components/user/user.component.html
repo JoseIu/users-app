@@ -4,8 +4,14 @@
 }
 <div class="users" *ngIf="usersFiltered">
   @for (user of usersFiltered; track $index) {
-  <article class="card" [style.view-transition-name]="'user-' + user.id">
-    <img class="card__img" [srcset]="user.img" [alt]="user.name" />
+  <article class="card" loading="lazy">
+    <img
+      class="card__img"
+      [srcset]="user.img"
+      [alt]="user.name"
+      width="300"
+      height="200"
+    />
     <div class="card__content">
       <div class="card__info">
         <div class="card__description">
