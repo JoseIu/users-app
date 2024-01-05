@@ -4,15 +4,20 @@
 }
 <div class="users">
   @for (user of usersFiltered; track $index) {
-  <article class="card">
-    <img [src]="user.img" [alt]="user.name" />
+  <article class="card" [style.view-transition-name]="'user-' + user.id">
+    <img
+      class="card__img"
+      [srcset]="user.img"
+      [alt]="user.name"
+      loading="lazy"
+    />
     <div class="card__content">
       <div class="card__info">
         <div class="card__description">
           <h2 class="card__name">{{ user.username }}</h2>
-          <p [ngClass]="user.active ? 'conected' : 'disconected'"></p>
+          <div [class]="user.active ? 'conected' : 'disconected'"></div>
         </div>
-        <span [ngClass]="user.role">{{ user.role }} </span>
+        <span [class]="user.role">{{ user.role }} </span>
       </div>
       <button class="card__btn" (click)="isActive(user)">
         {{ user.active ? "Disable" : "Active" }}

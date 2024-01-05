@@ -25,14 +25,13 @@ export class AppComponent implements OnInit {
     sortBy: new FormControl('0'),
   });
 
-  constructor() {}
-
   ngOnInit(): void {
     this.useresFiltered = this.initialUsers;
-
+  }
+  constructor() {
     this.form.valueChanges.subscribe((formValues) => {
       const { onlyActive, search, sortBy } = formValues;
-      console.log(formValues);
+
       const sortB = sortBy || '0';
       const sortByToInteger = parseInt(sortB);
 
@@ -48,7 +47,6 @@ export class AppComponent implements OnInit {
     filteredUsers = this.searchByName(filteredUsers, searchTerm);
     filteredUsers = this.filterBySort(filteredUsers, sortByy);
 
-    console.log(filteredUsers);
     this.useresFiltered = filteredUsers;
   }
 
@@ -72,8 +70,7 @@ export class AppComponent implements OnInit {
     if (userIndex !== -1) {
       this.useresFiltered[userIndex].active =
         !this.useresFiltered[userIndex].active;
-      // Volver a aplicar los filtros
-      // this.filterUsers(this.form.value.onlyActive);
+      this.filterUsers(this.form.get('onlyActive')?.value);
     }
   }
   filterBySort(users: User[], sortBy: number): User[] {

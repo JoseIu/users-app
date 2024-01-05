@@ -18,5 +18,6 @@ export class UserComponent implements OnInit {
     this.isActiveEmiter.emit(user);
   }
   constructor(private userService: UserServiceService) {}
+
   ngOnInit(): void {}
 }

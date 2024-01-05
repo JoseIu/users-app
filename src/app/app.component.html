@@ -35,8 +35,6 @@
       <option value="3">Active</option>
     </select>
   </div>
-
-  <!-- {{ useresFiltered | json }} -->
   <users-list-card
     [usersFiltered]="useresFiltered"
     (isActiveEmiter)="toggleUserActive($event)"

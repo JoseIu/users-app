@@ -8,10 +8,12 @@
   flex-direction: column;
 
   border-radius: 0.4em;
-  overflow: hidden;
 
   background-color: var(--zinc-900);
   color: var(--zinc-200);
+  &__img {
+    border-radius: 0.4em 0.4em 0 0;
+  }
   &__content {
     padding: 1em;
 

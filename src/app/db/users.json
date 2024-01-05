@@ -6,7 +6,7 @@
       "name": "Joselu",
       "active": false,
       "role": "student",
-      "img": "assets/images/user_6.png"
+      "img": "assets/images/user_6.webp"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "name": "Sara",
       "active": true,
       "role": "teacher",
-      "img": "assets/images/user_3.png"
+      "img": "assets/images/user_3.webp"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "name": "Vincent",
       "active": true,
       "role": "other",
-      "img": "assets/images/user_1.png"
+      "img": "assets/images/user_1.webp"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "name": "Paula",
       "active": false,
       "role": "teacher",
-      "img": "assets/images/user_5.png"
+      "img": "assets/images/user_5.webp"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "name": "Moy",
       "active": true,
       "role": "student",
-      "img": "assets/images/user_10.png"
+      "img": "assets/images/user_10.webp"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "name": "Llurnus",
       "active": false,
       "role": "other",
-      "img": "assets/images/user_7.png"
+      "img": "assets/images/user_7.webp"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "name": "Cristina",
       "active": false,
       "role": "teacher",
-      "img": "assets/images/user_8.png"
+      "img": "assets/images/user_8.webp"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "name": "Karen",
       "active": true,
       "role": "student",
-      "img": "assets/images/user_9.png"
+      "img": "assets/images/user_9.webp"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "name": "Encedalo",
       "active": true,
       "role": "other",
-      "img": "assets/images/user_11.png"
+      "img": "assets/images/user_11.webp"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "name": "Carlos",
       "active": true,
       "role": "other",
-      "img": "assets/images/user_4.png"
+      "img": "assets/images/user_4.webp"
     },
 
     {
@@ -87,7 +87,7 @@
       "name": "Covid",
       "active": true,
       "role": "student",
-      "img": "assets/images/user_2.png"
+      "img": "assets/images/user_2.webp"
     }
   ]
 }
