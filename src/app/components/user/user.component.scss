@@ -32,6 +32,7 @@
     align-items: center;
   }
   &__description {
+    // background-color: red;
     display: flex;
     column-gap: 0.4em;
     align-items: center;
@@ -60,25 +61,18 @@
 .other {
   padding: 0.3em;
   border-radius: 0.3em;
-
+  font-weight: 600;
+  background-color: var(--zinc-100);
+  color: var(--zinc-900);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.teacher {
-  background-color: rgba(255, 123, 0, 0.678);
-}
-.student {
-  background-color: rgba(66, 207, 250, 0.486);
-}
-.other {
-  background-color: gray;
-  color: var(--zinc-900);
-}
+
 .conected,
 .disconected {
-  width: 1em;
-  height: 1em;
+  width: 0.8em;
+  height: 0.8em;
   border-radius: 50%;
 }
 .conected {

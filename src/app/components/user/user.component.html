@@ -10,7 +10,7 @@
       <div class="card__info">
         <div class="card__description">
           <h2 class="card__name">{{ user.username }}</h2>
-          <div [class]="user.active ? 'conected' : 'disconected'"></div>
+          <span [class]="user.active ? 'conected' : 'disconected'"></span>
         </div>
         <span [class]="user.role">{{ user.role }} </span>
       </div>
